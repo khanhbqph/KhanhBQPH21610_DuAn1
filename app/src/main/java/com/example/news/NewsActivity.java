@@ -123,6 +123,7 @@ public class NewsActivity extends AppCompatActivity {
             }
             Log.i("00000", String.valueOf(ItemLists.size()));
             return ItemLists;
+            //test commit
         }
     }
 }
