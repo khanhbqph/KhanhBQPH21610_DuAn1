@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên báo"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        tools:boxBackgroundColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Link RSS..."
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        tools:boxBackgroundColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="*Thêm link web đọc báo cho android sử dụng nguồn tin rss từ VTV RSS --- thêm tên báo và link rss của báo"/>
+
+<!--    Mã nguồn ứng dụng đọc báo cho android sử dụng nguồn tin rss từ VTV RSS, ngôn ngữ Java.-->
+
+<!--    MÔ TẢ CHI TIẾT-->
+<!--    Các bạn tải code ứng dụng và tự tìm hiểu nha-->
+
+<!--    Mình chia sẻ miễn phí Code app đọc báo trên thiết bị android, viết bằng ngôn ngữ Java.-->
+
+<!--    các chức năng chính:-->
+
+<!--    -thêm link rss: thêm tên báo và link rss của báo(VTV RSS).-->
+
+<!--    -xóa link rss: xóa link báo đã lưu.-->
+
+<!--    -đọc báo: item báo hiển thị chi tiết gồm: ảnh, tiêu đề, và ngày đăng. Khi click vào item sẽ chuyển đến web view hiển thị chi tiết bài báo.-->
+
+<!--    -cảnh báo khi không có kết nối internet.-->
+
+<!--    Chú ý:ứng dụng chỉ hoạt động đúng với các link RSS của VTV-->
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_ok"
+        android:text="thêm"
+        android:textColor="@color/white" />
+</LinearLayout>
