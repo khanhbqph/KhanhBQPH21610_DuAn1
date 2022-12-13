@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(context.getApplicationContext(), "clear cache failed", Toast.LENGTH_SHORT).show();
         }
     }
-
+//comment test pull
     public static boolean deleteDir(File dir) {
         if (dir != null && dir.isDirectory()) {
             String[] children = dir.list();
